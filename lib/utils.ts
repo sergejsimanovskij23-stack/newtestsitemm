@@ -3,7 +3,7 @@ import path from "path";
 import crypto from "crypto";
 
 const ADMIN_PASSWORD = "admin2024";
-const DATA_PATH = path.resolve(process.cwd(), "data", "store.json");
+const DATA_PATH = path.join(process.cwd(), "data", "store.json");
 
 export function readData() {
   const raw = fs.readFileSync(DATA_PATH, "utf-8");
